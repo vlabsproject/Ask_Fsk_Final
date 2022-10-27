@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Stream</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>ASK Modulation and Demodulation</h1>
+     <div class="Switch">
+      <div class="switchRed shadow" onclick="onOff()">
+            <p><br> POWER ON/OFF</p>
+      </div>
+      <div class="led "><img id="leds" src="images/redLed.png"></div>
+    </div>
+   
+    <!-- User Input -->
+    <div class="module-border-wrap">
+    <div class="userInput">
+      
+    <img src="zero.jpeg" class="image" id="s0" onclick="swapOneZero0()">
+    <img src="zero.jpeg" class="image" id="s1" onclick="swapOneZero1()">
+    <img src="zero.jpeg" class="image" id="s2" onclick="swapOneZero2()">
+    <img src="zero.jpeg" class="image" id="s3" onclick="swapOneZero3()">
+    <img src="zero.jpeg" class="image" id="s4" onclick="swapOneZero4()">
+    <img src="zero.jpeg" class="image" id="s5" onclick="swapOneZero5()">
+    <img src="zero.jpeg" class="image" id="s6" onclick="swapOneZero6()">
+    <img src="zero.jpeg" class="image" id="s7" onclick="swapOneZero7()">
+    <button class="runButton" onclick="printArray()">RUN </button>
+    </div>
+    </div>
+</div>
+
+<!-- Instructions -->
+<div class="wrapper">
+    <div class="topContainer">Instructions</div>
+    <div class="midContainer">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    </div>
+
+
+
+<!-- Graphs -->
+<div class="graphs">
+<canvas id="canvasStep" height="300px" style="border:1px solid" ></canvas>
+<canvas id="canvasCarrier" height="300px" style="border:1px solid"></canvas>
+<canvas id="canvasASK" height="300px" style="border:1px solid"></canvas>
+<canvas id="canvasFSK" height="300px" style="border:1px >solid"></canvas>
+</div>
+</div>
+<script src="merge.js"></script>
+</body>
+</html>
