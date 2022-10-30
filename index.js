@@ -267,6 +267,7 @@ title: "Input signal";
 // var dps = [1, 1, 0 ,0, 0, 1, 0, 1];
 
 c.moveTo(0,h/2);
+
 for( let i=0; i<8; i++)
 {
     if(bitStream[i] == 0)
@@ -287,8 +288,13 @@ c.stroke();
 function sineWave(){
 const carrier = document.getElementById('canvasCarrier');
 const d = carrier.getContext('2d');
-d.clearRect(0, 0, canvas.width, canvas.height);  
 
+// carrier.width = innerWidth;
+// carrier.height = innerHeight;
+
+d.beginPath();
+
+d.moveTo(0,carrier.height/2);
 // Amp check
 if(document.getElementById('radio-choice-0').checked==true){
   var amp=0;
@@ -326,53 +332,8 @@ else if(document.getElementById('radio-choice-10').checked==true){
 else{
   var amp = 70;
 }
-// frequency check
-
-if(document.getElementById('freq-choice-0').checked==true){
-  var freq=0;
-}
-else if(document.getElementById('freq-choice-1').checked==true){
-  var freq=1;
-}
-else if(document.getElementById('freq-choice-2').checked==true){
-  var freq=2;
-}
-else if(document.getElementById('freq-choice-3').checked==true){
-  var freq=3;
-}
-else if(document.getElementById('freq-choice-4').checked==true){
-  var freq=4;
-}
-else if(document.getElementById('freq-choice-5').checked==true){
-  var freq=5;
-}
-else if(document.getElementById('freq-choice-6').checked==true){
-  var freq=6;
-}
-else if(document.getElementById('freq-choice-7').checked==true){
-  var freq=7;
-}
-else if(document.getElementById('freq-choice-8').checked==true){
-  var freq=8;
-}
-else if(document.getElementById('freq-choice-9').checked==true){
-  var freq=9;
-}
-else if(document.getElementById('freq-choice-10').checked==true){
-  var freq=10;
-}
-else{
-  var freq = 70;
-}
-
-// carrier.width = innerWidth;
-// carrier.height = innerHeight;
-
-d.beginPath();
-
-d.moveTo(0,carrier.height/2);
 for (let i = 0; i < carrier.width; i++) {
-  d.lineTo(i, carrier.height/2 + Math.sin(i * freq) * amp);  
+  d.lineTo(i, carrier.height/2 + Math.sin(i * 0.3) * amp*10);  
 }
 d.lineTo(carrier.width, carrier.height/2);
 d.stroke();
@@ -384,82 +345,6 @@ function askOutput(){
     e.clearRect(0, 0, output.width, output.height); 
     e.beginPath();
     e.moveTo(0,output.height/2);
-    // Amp check
-if(document.getElementById('radio-choice-0').checked==true){
-  var amp=0;
-}
-else if(document.getElementById('radio-choice-1').checked==true){
-  var amp=1;
-}
-else if(document.getElementById('radio-choice-2').checked==true){
-  var amp=2;
-}
-else if(document.getElementById('radio-choice-3').checked==true){
-  var amp=3;
-}
-else if(document.getElementById('radio-choice-4').checked==true){
-  var amp=4;
-}
-else if(document.getElementById('radio-choice-5').checked==true){
-  var amp=5;
-}
-else if(document.getElementById('radio-choice-6').checked==true){
-  var amp=6;
-}
-else if(document.getElementById('radio-choice-7').checked==true){
-  var amp=7;
-}
-else if(document.getElementById('radio-choice-8').checked==true){
-  var amp=8;
-}
-else if(document.getElementById('radio-choice-9').checked==true){
-  var amp=9;
-}
-else if(document.getElementById('radio-choice-10').checked==true){
-  var amp=10;
-}
-else{
-  var amp = 70;
-}
-// frequency check
-
-if(document.getElementById('freq-choice-0').checked==true){
-  var freq=0;
-}
-else if(document.getElementById('freq-choice-1').checked==true){
-  var freq=1;
-}
-else if(document.getElementById('freq-choice-2').checked==true){
-  var freq=2;
-}
-else if(document.getElementById('freq-choice-3').checked==true){
-  var freq=3;
-}
-else if(document.getElementById('freq-choice-4').checked==true){
-  var freq=4;
-}
-else if(document.getElementById('freq-choice-5').checked==true){
-  var freq=5;
-}
-else if(document.getElementById('freq-choice-6').checked==true){
-  var freq=6;
-}
-else if(document.getElementById('freq-choice-7').checked==true){
-  var freq=7;
-}
-else if(document.getElementById('freq-choice-8').checked==true){
-  var freq=8;
-}
-else if(document.getElementById('freq-choice-9').checked==true){
-  var freq=9;
-}
-else if(document.getElementById('freq-choice-10').checked==true){
-  var freq=10;
-}
-else{
-  var freq = 70;
-}
-
     for( let j=0; j<8; j++){
     if(bitStream[j]==0)
     {
@@ -473,7 +358,7 @@ else{
     {
         for (let i =j*output.width/8; i < ((j+1)*output.width)/8; i++) 
         {
-        e.lineTo(i, output.height/2 + Math.sin(i * freq) * amp);  
+        e.lineTo(i, output.height/2 + Math.sin(i * 0.5) * 100);  
         }
       // e.lineTo(output.width, output.height/2);
     }
@@ -486,88 +371,12 @@ function ffskOutput(){
     f.clearRect(0, 0, fskSignal.width, fskSignal.height); 
     f.beginPath();
     f.moveTo(0,fskSignal.height/2);
-    // Amp check
-if(document.getElementById('radio-choice-0').checked==true){
-  var amp=0;
-}
-else if(document.getElementById('radio-choice-1').checked==true){
-  var amp=1;
-}
-else if(document.getElementById('radio-choice-2').checked==true){
-  var amp=2;
-}
-else if(document.getElementById('radio-choice-3').checked==true){
-  var amp=3;
-}
-else if(document.getElementById('radio-choice-4').checked==true){
-  var amp=4;
-}
-else if(document.getElementById('radio-choice-5').checked==true){
-  var amp=5;
-}
-else if(document.getElementById('radio-choice-6').checked==true){
-  var amp=6;
-}
-else if(document.getElementById('radio-choice-7').checked==true){
-  var amp=7;
-}
-else if(document.getElementById('radio-choice-8').checked==true){
-  var amp=8;
-}
-else if(document.getElementById('radio-choice-9').checked==true){
-  var amp=9;
-}
-else if(document.getElementById('radio-choice-10').checked==true){
-  var amp=10;
-}
-else{
-  var amp = 70;
-}
-// frequency check
-
-if(document.getElementById('freq-choice-0').checked==true){
-  var freq=0;
-}
-else if(document.getElementById('freq-choice-1').checked==true){
-  var freq=1;
-}
-else if(document.getElementById('freq-choice-2').checked==true){
-  var freq=2;
-}
-else if(document.getElementById('freq-choice-3').checked==true){
-  var freq=3;
-}
-else if(document.getElementById('freq-choice-4').checked==true){
-  var freq=4;
-}
-else if(document.getElementById('freq-choice-5').checked==true){
-  var freq=5;
-}
-else if(document.getElementById('freq-choice-6').checked==true){
-  var freq=6;
-}
-else if(document.getElementById('freq-choice-7').checked==true){
-  var freq=7;
-}
-else if(document.getElementById('freq-choice-8').checked==true){
-  var freq=8;
-}
-else if(document.getElementById('freq-choice-9').checked==true){
-  var freq=9;
-}
-else if(document.getElementById('freq-choice-10').checked==true){
-  var freq=10;
-}
-else{
-  var freq = 70;
-}
-
     for( let j=0; j<8; j++){
     if(bitStream[j]==0)
     {
         for (let i = j*fskSignal.width/8; i < ((j+1)*fskSignal.width)/8; i++)
             {
-            f.lineTo(i, fskSignal.height/2 + Math.sin(i * freq) * amp);  
+            f.lineTo(i, fskSignal.height/2 + Math.sin(i * 0.5) * 100);  
             }
           // e.lineTo(output.width, output.height/2);
     }
@@ -575,7 +384,7 @@ else{
     {
         for (let i =j*fskSignal.width/8; i < ((j+1)*fskSignal.width)/8; i++) 
         {
-        f.lineTo(i, fskSignal.height/2 + Math.sin(i * freq) * amp);  
+        f.lineTo(i, fskSignal.height/2 + Math.sin(i * 1.0) * 100);  
         }
       // e.lineTo(output.width, output.height/2);
     }
