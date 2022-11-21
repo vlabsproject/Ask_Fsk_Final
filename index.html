@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLABS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!-- <div class="logo">
+        <img src="IMAGES YAAR/logo.jpeg"  alt="">
+    </div> -->
+    <div class="Vlabs">
+        <span>VLABS</span>
+    </div>
+    <div class="User">
+        <span>John K Jacobs</span>
+    </div>
+    <div class="Signupbutton">
+        <span>Sign out</span>
+    </div>
+    <div class="line1"> </div>
+    <div class="Lines2"> </div>
+    <div class="bluebar"> Instructions</div>
+    <div class="HEADING1">
+        <span>ASK Modulation and Demodulation</span>
+    </div>
+    <div class="next"> Next</div>
+    <div class="back"> Back</div>
+
+
+
+
+
+    <div id="parent">
+        <!-- switch -->
+     <div class="setup1">
+        <span><img src="IMAGES YAAR/setup bg.jpg" alt=""></span> 
+         </div>
+        <!-- switch -->
+     <div class="Switch">
+      <div class="switchRed shadow" onclick="onOff()"> </div>
+       <!-- bulb -->
+      <div class="led "><img id="leds" src="IMAGES YAAR/redLed.png"></div>
+    </div>
+    
+
+    <!-- User Input -->
+
+      
+
+    <div class="Instruction"></div>
+    <div class="simulationbar"><h2>Simulation</h2></div>
+
+
+
+            <div class="userInput">
+          
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss0" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss1" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss2" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss3" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss4" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss5" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss6" >
+        <img src="IMAGES YAAR/zero.jpeg" class="image" id="ss7" >
+        <button class="runButton" onclick="printArray()">RUN </button>
+        </div>
+        <!-- Toogle Pins Code  -->
+        <div class="togglepins">
+    <span class="s0" ><img id="s0" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero0(); playSound();"/></span>
+    <span  class="s1"> <img id="s1" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero1(); playSound();" /></span>
+    <span  class="s2"  ><img id="s2" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero2(); playSound();"/></span>
+    <span class="s3"  ><img id="s3" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero3(); playSound();"/></span>
+    <span class="s4" ><img id="s4" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero4(); playSound();"/></span>
+    <span class="s5"  ><img id="s5" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero5(); playSound();"/></span>
+    <span class="s6"  ><img id="s6" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero6(); playSound();"/></span>
+   <span class="s"  ><img id="s7" src="IMAGES YAAR/toggle_off.png" onclick="swapOneZero7(); playSound();"/></span>
+</div>
+    </div>
+
+</div>
+<br>
+<!-- dial -->
+<div class="container">
+    <form action="#">
+      <div>
+  
+        <fieldset>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-0" value=0 />
+          <label for="radio-choice-0">0</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-1" value=1 />
+          <label for="radio-choice-1">1</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-2" value=2 />
+          <label for="radio-choice-2">2</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-3" value=3 />
+          <label for="radio-choice-3">3</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-4" value=4 />
+          <label for="radio-choice-4">4</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-5" value=5 />
+          <label for="radio-choice-5">5</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-6" value=6 />
+          <label for="radio-choice-6">6</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-7" value=7 />
+          <label for="radio-choice-7">7</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-8" value=8 />
+          <label for="radio-choice-8">8</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-9" value=9 />
+          <label for="radio-choice-9">9</label>
+  
+          <input type="radio" name="radio-choice" id="radio-choice-10" value=10 />
+          <label for="radio-choice-10">10</label>
+  
+          <div class="dial">▲</div>
+  
+        </fieldset>
+  </div>
+    </form>
+  </div>
+
+  <!-- Dial for Frequency-->
+  <div class="containera">  
+    <form action="#">
+      <div>
+  
+        <fieldset>
+          <input type="radio" name="radio-choice" id="freq-choice-0" value=0 />
+          <label for="freq-choice-0">0</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-1" value=1 />
+          <label for="freq-choice-1">1</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-2" value=2 />
+          <label for="freq-choice-2">2</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-3" value=3 />
+          <label for="freq-choice-3">3</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-4" value=4 />
+          <label for="freq-choice-4">4</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-5" value=5 />
+          <label for="freq-choice-5">5</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-6" value=6 />
+          <label for="freq-choice-6">6</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-7" value=7 />
+          <label for="freq-choice-7">7</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-8" value=8 />
+          <label for="freq-choice-8">8</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-9" value=9 />
+          <label for="freq-choice-9">9</label>
+  
+          <input type="radio" name="freq-choice" id="freq-choice-10" value=10 />
+          <label for="freq-choice-10">10</label>
+  
+          <div class="dial">▲</div>
+  
+        </fieldset>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+<!-- Audio Source  -->
+<!-- <audio src="IMAGES YAAR/switchOn.mp3" id="myAudio"></audio> -->
+
+
+
+
+<br>
+<!-- Instructions -->
+<!--<div class="topContainer">Instructions</div>-->
+<div class="wrapper">
+    <div class="midContainer1">
+         1. First Turn on 8 Bit Variable data generator using power switch which helps to generate the data signal from given data <br>
+        2. Change the orientation of data switch as per your data, for 0 toggle it up to vice versa.<br>
+
+        3.Check the data again from S0 to S7 bit and the amplitude and frequency of message signal.<br>
+    </div>
+    <div class="midContainer2">
+       4.Click on RUN button to generate the ASK signal <br>
+
+        5.Observe the graph and download it from right to top corner of graph in png,jpeg,and pdf format.<Br>
+
+        6.To decode the ASK signal click the decode button shown below.<br>
+    </div>
+</div>
+<!-- Graphs -->
+<div class="Gbg1"><h2>Message Signal</h2></div>
+<div class="Gbg2"><h2>Data Signal </h2></div>
+<div class="Gbg3"><h2>ASK Signal</h2></div>
+<div class="Gbg4"><h2>Decoding of ASK signal</h2></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="graphs">
+<canvas id="canvasCarrier" width = "640px" height = " 370px"   ; style="border:1px solid"></canvas>
+<canvas id="canvasASK" width = "640px" height="  370px" style="border:1px solid"></canvas>
+<canvas id="canvasFSK" width = "640px" height="  370px" style="border:1px solid"></canvas>
+<canvas id="canvasDemodulated" width = "650px" height="  370px" style="border:1px solid"></canvas>
+</div>
+<div class="last-block"></div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

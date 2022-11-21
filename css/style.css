@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
+body{
+    width: 900px;
+    height: 100vh;
+    overflow:auto ;
+}
+
+
+
+.Vlabs{
+  position: absolute;  
+  width: 82px;  
+  height: 28px;  
+  left: 75px;  
+  top: 33px;  
+  
+  font-family: 'Poppins';  
+  font-style: bold;  
+  font-weight: 700;  
+  font-size: 24px;  
+  line-height: 28px;  
+  
+  color: #000000;  
+     
+	   
+}
+
+.User{
+	/* Udbhav v Kamath */
+
+	position: absolute;
+	width: 222px;
+	height: 34px;
+	left: 1187px;
+	top: 33px;  
+	
+	font-family: 'Poppins';
+	font-style: Bold;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	
+	color: #000000;
+}
+.Signupbutton{
+	/* Property 1=normal */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+font-family: 'Poppins';
+	font-style: Bold;
+  text-align: center;
+padding: 4px 14px;
+gap: 10px;
+
+position: absolute;
+width: 100px;
+height: 32px;
+left: 1394px;
+top: 33px;  
+
+background: #FFFFFF;
+border: 1px solid #000000;
+box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25);
+border-radius: 6px;
+}
+
+.bluebar{
+	text-align: center;
+	color: #FFFAFA;
+	padding-top: 20px;
+	font-size: 25px;
+	font-family: 'Poppins';
+	font-style: Bold;
+	font-weight: 400;
+	
+}
+.bluebar{
+	position: absolute;
+width: 1580px;
+height: 79px;
+left: 0px;
+top: 85px;
+
+background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
+}
+.line1{
+  position: absolute;
+  width: 1880px;
+  height: 0px;
+  left: -7px;
+  top: 84px;
+  
+  border: 1px solid #000000;
+  transform: rotate(0.06deg);
+  }
+
+
+  .HEADING1{
+         
+
+    /* ASK Modulation and Demodulation */
+
+          
+position: absolute;
+height: 26px;
+left: 485px;
+top: 196px;
+
+font-family: 'Poppins';
+font-style: bold;
+font-weight: 400;
+font-size: 34px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.next{
+	align-items:center;
+	font-family: 'Poppins';
+font-style: bold;
+font-size: 20px;
+color: #FFFAFA;
+}
+.next{
+	
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 14px;
+gap: 10px;
+
+position: absolute;
+width: 100px;
+height: 50px;
+left: 1393px;
+top: 202px;
+
+background: #256AC0;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 0.5px 1.5px rgba(9, 63, 163, 0.25);
+border-radius: 6px;
+
+}
+
+.back{
+	font-family: 'Poppins';
+font-style: bold;
+color: #FFFAFA;
+font-size: 20px;
+
+}
+.back{
+
+	box-sizing: border-box;
+
+	/* Auto layout */
+	
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 4px 14px;
+	gap: 10px;
+	
+	position: absolute;
+	width: 100px;
+height: 50px;
+	left: 65px;
+	top: 202px;
+	
+	background: #2469BF;
+	border: 1px solid #FFFDFD;
+	box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25);
+	border-radius: 6px;
+}
+.midContainer1{
+	position: absolute;
+width: 648px;
+height: 236px;
+left: 41px;
+top: 380px;
+
+font-family: 'inter';
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 29px;
+
+color: #000000;
+
+}
+
+
+.midContainer2{
+	position: absolute;
+width: 648px;
+height: 236px;
+left: 795px;
+top: 380px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 29px;
+
+color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.simulationbar{
+	text-align: center;
+	color: #FFFAFA;
+	font-size: 20px;
+}
+.simulationbar{
+	position: absolute;
+width: 1500px;
+height: 70px; 
+left: 0px;
+top: 720px;
+
+background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
+
+}
+
+ .switchRed{
+     width: 60px;
+     height: 60px;
+     background-color: red;
+     position: absolute;
+	 margin-top: 1100px;
+     margin-left: 325px;
+     box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.4); 
+     border: double;
+ }  
+
+ .led{
+  height: 20px;
+	margin:auto;
+	text-align: center;
+ }
+ .switchRed p{
+	margin-top: 3540px;
+    font-size: 18px;
+ }
+ .led img{
+	position: relative;
+	height: 40px;
+	margin-top: 1090px;
+	left: -18px;
+ }
+
+
+
+
+/*UserInput*/
+
+/*BACKGROUND IMAGE*/
+.setup1{
+	position: absolute;
+	margin-top: 1000px;
+	margin-left:165px;
+	height: 890px;
+	width: 90px;
+} 
+
+.setup1 img{
+	height: 400px;
+	
+}
+
+
+
+
+
+
+.userInput{
+	height: 200px;
+ 
+  color: rgb(12, 0, 0);
+  padding:0.5px ;
+  border-radius: 5px;
+  /* position:relative; */
+  
+}
+.image{
+	position: relative;
+	height: 50px;
+	top: -120px;
+	left: 550px;
+}
+
+/*Run*/
+.runButton{
+	 width: 60px;
+     height: 60px;
+     position: relative;
+     margin-left: -135px;
+     margin-top: 1210px;
+	background-color: rgb(208, 205, 205);
+	border:4px double #010101;
+
+
+    font-family:Allan;
+    color: black;
+    font-style: bold;
+}
+.runButton:hover {
+    transform:scale(1.2,1.2);
+}
+
+.togglepins{
+	height: 20px;
+	margin:auto;
+	text-align: center;
+	top: 700px;
+}
+
+
+.togglepins img{
+	position: relative;
+	padding:0.9px ;
+	height: 76px;
+	top: 1030px;
+	left:320px;
+}
+
+
+.Instructions{
+	/* Rectangle 96 */
+
+
+position: absolute;
+width: 1453px;
+height: 90px;
+left: 20px;
+top: 996px;
+
+background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
+border-radius: 14.0304px;
+}
+
+
+
+/*canvas*/
+.Gbg1{
+	text-align: center;
+	font-family: 'Public Sans';
+	color: #FFFAFA;
+	position: absolute;
+	width: 650px;
+	height: 370px;
+	left: 50px;
+	top: 1572px;
+	
+	background: linear-gradient(180deg, #2F75CE 0%, rgba(47, 117, 206, 0.66) 50.52%, #2F75CE 100%);
+	border-radius: 10px;
+
+}
+.Gbg2{
+	text-align: center;
+	font-family: 'Public Sans';
+	color: #FFFAFA;
+	position: absolute;
+	width: 650px;
+	height: 370px;
+	left: 770px;
+	top: 1572px;
+	
+	background: linear-gradient(180deg, #2F75CE 0%, rgba(47, 117, 206, 0.66) 50.52%, #2F75CE 100%);
+	border-radius: 10px;
+
+}
+.Gbg3{
+	text-align: center;
+	font-family: 'Public Sans';
+	color: #FFFAFA;
+	position: absolute;
+	width: 650px;
+	height: 370px;
+	left: 50px;
+	top: 2000px;
+	
+	background: linear-gradient(180deg, #2F75CE 0%, rgba(47, 117, 206, 0.66) 50.52%, #2F75CE 100%);
+	border-radius: 10px;
+
+}.Gbg4{
+	text-align: center;
+	font-family: 'Public Sans';
+	color: #FFFAFA;
+	position: absolute;
+	width: 650px;
+	height: 370px;
+	left: 770px;
+	top: 2000px;
+	
+	background: linear-gradient(180deg, #2F75CE 0%, rgba(47, 117, 206, 0.66) 50.52%, #2F75CE 100%);
+	border-radius: 10px;
+
+}
+
+
+
+
+/*.graphs{
+	height: 550px;
+	background-color:rgb(8, 0, 0) ;
+	position: relative;
+	top: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+*/
+#canvasCarrier{
+
+
+	position: absolute;
+	/* width: 647.64px;
+	height: 299.9px; */
+	width: 590px;
+		height: 290px;
+		left: 80px;
+		
+top: 1630px;
+	
+}
+
+
+#canvasASK{
+	
+	position: absolute;
+	/* width: 647.64px;
+	height: 299.9px; */
+	width: 590px;
+		height: 290px;	
+		top: 1630px;
+	left: 800px;
+
+	
+	
+}
+#canvasFSK{
+
+	position: absolute;
+/* width: 647.64px;
+height: 299.9px; */
+width: 590px;
+	height: 290px;
+	left: 80px;
+	top: 2060px;
+
+
+	
+}
+#canvasDemodulated{
+
+	position: absolute;
+/* width: 647.64px;
+height: 299.9px; */
+width: 590px;
+	height: 290px;
+	left: 800px;
+	top: 2060px;
+
+	
+
+
+}
+
+
+* {
+	box-sizing: border-box;
+	}
+	
+	
+	@media all and (max-width: 600px) {
+	html {
+	font-size: 14px;
+	}
+	}
+	
+	body {
+	height: 100%;
+	min-height: 100%;
+	}
+	
+	.container{
+	  position: relative;
+	  display: flexbox;
+	  top: 20.7rem;
+    right:11rem;
+	}
+	.containera{
+	  position: relative;
+	  display:flexbox;
+	  top: 6.8rem;
+    right: 29rem;
+	}
+	form {
+	max-width: 30rem;
+	margin: 4rem auto;
+	text-align: center;
+	}
+	
+	fieldset {
+	position: relative;
+	border: none;
+	width: 10rem;
+	height: 10rem;
+	margin: 0 auto;
+	top: 100px;
+	left: 900px;
+	}
+	
+	fieldset label {
+	position: absolute;
+	display: block;
+	margin: 0 auto;
+	padding-top: 1rem;
+	width: 1rem;
+	left: 4.3rem;
+	transform-origin: 50% 100px;
+	}
+	fieldset label:hover {
+	cursor: pointer;
+	}
+	fieldset input {
+	position: absolute;
+	width: 7rem;
+	left: 7rem;
+	display: block;
+	margin: 1rem auto 0 auto;
+	padding: 0;
+	transform-origin: 50% 7.5rem;
+	opacity: 0;
+	}
+	
+	fieldset input:hover {
+	cursor: pointer;
+	}
+	fieldset #radio-choice-0, fieldset label[for=radio-choice-0] {
+	transform: rotateZ(0deg);
+	}
+	fieldset #radio-choice-1, fieldset label[for=radio-choice-1] {
+	transform: rotateZ(30deg);
+	}
+	fieldset #radio-choice-2, fieldset label[for=radio-choice-2] {
+	transform: rotateZ(60deg);
+	}
+	fieldset #radio-choice-3, fieldset label[for=radio-choice-3] {
+	transform: rotateZ(90deg);
+	}
+	fieldset #radio-choice-4, fieldset label[for=radio-choice-4] {
+	transform: rotateZ(120deg);
+	}
+	fieldset #radio-choice-5, fieldset label[for=radio-choice-5] {
+	transform: rotateZ(150deg);
+	}
+	fieldset #radio-choice-6, fieldset label[for=radio-choice-6] {
+	transform: rotateZ(180deg);
+	}
+	fieldset #radio-choice-7, fieldset label[for=radio-choice-7] {
+	transform: rotateZ(210deg);
+	}
+	fieldset #radio-choice-8, fieldset label[for=radio-choice-8] {
+	transform: rotateZ(240deg);
+	}
+	fieldset #radio-choice-9, fieldset label[for=radio-choice-9] {
+	transform: rotateZ(270deg);
+	}
+	fieldset #radio-choice-10, fieldset label[for=radio-choice-10] {
+	transform: rotateZ(300deg);
+	}
+	fieldset input[type=radio]:checked + label {
+	color: #2f5;
+	text-shadow: 0px 0px 4px #2f5;
+	}
+	
+	input[type=radio]:checked#radio-choice-1 ~ .dial {
+	transform: rotateZ(30deg);
+	}
+	input[type=radio]:checked#radio-choice-1 ~ .dial::before {
+	transform: rotateZ(30deg);
+	}
+	input[type=radio]:checked#radio-choice-1 ~ .dial::after {
+	transform: rotateZ(30deg);
+	}
+	input[type=radio]:checked#radio-choice-2 ~ .dial {
+	transform: rotateZ(60deg);
+	}
+	input[type=radio]:checked#radio-choice-2 ~ .dial::before {
+	transform: rotateZ(60deg);
+	}
+	input[type=radio]:checked#radio-choice-2 ~ .dial::after {
+	transform: rotateZ(60deg);
+	}
+	input[type=radio]:checked#radio-choice-3 ~ .dial {
+	transform: rotateZ(90deg);
+	}
+	input[type=radio]:checked#radio-choice-3 ~ .dial::before {
+	transform: rotateZ(90);
+	}
+	input[type=radio]:checked#radio-choice-3 ~ .dial::after {
+	transform: rotateZ(90);
+	}
+	input[type=radio]:checked#radio-choice-4 ~ .dial {
+	transform: rotateZ(120deg);
+	}
+	input[type=radio]:checked#radio-choice-4 ~ .dial::before {
+	transform: rotateZ(120deg);
+	}
+	input[type=radio]:checked#radio-choice-4 ~ .dial::after {
+	transform: rotateZ(120deg);
+	}
+	input[type=radio]:checked#radio-choice-5 ~ .dial {
+	transform: rotateZ(150deg);
+	}
+	input[type=radio]:checked#radio-choice-5 ~ .dial::before {
+	transform: rotateZ(150);
+	}
+	input[type=radio]:checked#radio-choice-5 ~ .dial::after {
+	transform: rotateZ(150);
+	}
+	input[type=radio]:checked#radio-choice-6 ~ .dial {
+	transform: rotateZ(180deg);
+	}
+	input[type=radio]:checked#radio-choice-6 ~ .dial::before {
+	transform: rotateZ(180deg);
+	}
+	input[type=radio]:checked#radio-choice-6 ~ .dial::after {
+	transform: rotateZ(180deg);
+	}
+	input[type=radio]:checked#radio-choice-7 ~ .dial {
+	transform: rotateZ(210deg);
+	}
+	input[type=radio]:checked#radio-choice-7 ~ .dial::before {
+	transform: rotateZ(210deg);
+	}
+	input[type=radio]:checked#radio-choice-7 ~ .dial::after {
+	transform: rotateZ(210deg);
+	}
+	input[type=radio]:checked#radio-choice-8 ~ .dial {
+	transform: rotateZ(240deg);
+	}
+	input[type=radio]:checked#radio-choice-8 ~ .dial::before {
+	transform: rotateZ(240deg);
+	}
+	input[type=radio]:checked#radio-choice-8 ~ .dial::after {
+	transform: rotateZ(240deg);
+	}
+	input[type=radio]:checked#radio-choice-9 ~ .dial {
+	transform: rotateZ(270deg);
+	}
+	input[type=radio]:checked#radio-choice-9 ~ .dial::before {
+	transform: rotateZ(270deg);
+	}
+	input[type=radio]:checked#radio-choice-9 ~ .dial::after {
+	transform: rotateZ(270deg);
+	}
+	input[type=radio]:checked#radio-choice-10 ~ .dial {
+	transform: rotateZ(300deg);
+	}
+	input[type=radio]:checked#radio-choice-10 ~ .dial::before {
+	transform: rotateZ(300deg);
+	}
+	input[type=radio]:checked#radio-choice-10 ~ .dial::after {
+	transform: rotateZ(300deg);
+	}
+	
+	/* Frequency */
+	fieldset #freq-choice-0, fieldset label[for=freq-choice-0] {
+	transform: rotateZ(0deg);
+	}
+	fieldset #freq-choice-1, fieldset label[for=freq-choice-1] {
+	transform: rotateZ(30deg);
+	}
+	fieldset #freq-choice-2, fieldset label[for=freq-choice-2] {
+	transform: rotateZ(60deg);
+	}
+	fieldset #freq-choice-3, fieldset label[for=freq-choice-3] {
+	transform: rotateZ(90deg);
+	}
+	fieldset #freq-choice-4, fieldset label[for=freq-choice-4] {
+	transform: rotateZ(120deg);
+	}
+	fieldset #freq-choice-5, fieldset label[for=freq-choice-5] {
+	transform: rotateZ(150deg);
+	}
+	fieldset #freq-choice-6, fieldset label[for=freq-choice-6] {
+	transform: rotateZ(180deg);
+	}
+	fieldset #freq-choice-7, fieldset label[for=freq-choice-7] {
+	transform: rotateZ(210deg);
+	}
+	fieldset #freq-choice-8, fieldset label[for=freq-choice-8] {
+	transform: rotateZ(240deg);
+	}
+	fieldset #freq-choice-9, fieldset label[for=freq-choice-9] {
+	transform: rotateZ(270deg);
+	}
+	fieldset #freq-choice-10, fieldset label[for=freq-choice-10] {
+	transform: rotateZ(300deg);
+	}
+	input[type=radio]:checked#freq-choice-1 ~ .dial {
+	transform: rotateZ(30deg);
+	}
+	input[type=radio]:checked#freq-choice-1 ~ .dial::before {
+	transform: rotateZ(30deg);
+	}
+	input[type=radio]:checked#freq-choice-1 ~ .dial::after {
+	transform: rotateZ(30deg);
+	}
+	input[type=radio]:checked#freq-choice-2 ~ .dial {
+	transform: rotateZ(60deg);
+	}
+	input[type=radio]:checked#freq-choice-2 ~ .dial::before {
+	transform: rotateZ(60deg);
+	}
+	input[type=radio]:checked#freq-choice-2 ~ .dial::after {
+	transform: rotateZ(60deg);
+	}
+	input[type=radio]:checked#freq-choice-3 ~ .dial {
+	transform: rotateZ(90deg);
+	}
+	input[type=radio]:checked#freq-choice-3 ~ .dial::before {
+	transform: rotateZ(90);
+	}
+	input[type=radio]:checked#freq-choice-3 ~ .dial::after {
+	transform: rotateZ(90);
+	}
+	input[type=radio]:checked#freq-choice-4 ~ .dial {
+	transform: rotateZ(120deg);
+	}
+	input[type=radio]:checked#freq-choice-4 ~ .dial::before {
+	transform: rotateZ(120);
+	}
+	input[type=radio]:checked#freq-choice-4 ~ .dial::after {
+	transform: rotateZ(120);
+	}
+	input[type=radio]:checked#freq-choice-5 ~ .dial {
+	transform: rotateZ(150deg);
+	}
+	input[type=radio]:checked#freq-choice-5 ~ .dial::before {
+	transform: rotateZ(150);
+	}
+	input[type=radio]:checked#freq-choice-5 ~ .dial::after {
+	transform: rotateZ(150);
+	}
+	input[type=radio]:checked#freq-choice-6 ~ .dial {
+	transform: rotateZ(180deg);
+	}
+	input[type=radio]:checked#freq-choice-6 ~ .dial::before {
+	transform: rotateZ(180deg);
+	}
+	input[type=radio]:checked#freq-choice-6 ~ .dial::after {
+	transform: rotateZ(180deg);
+	}
+	input[type=radio]:checked#freq-choice-7 ~ .dial {
+	transform: rotateZ(210deg);
+	}
+	input[type=radio]:checked#freq-choice-7 ~ .dial::before {
+	transform: rotateZ(210deg);
+	}
+	input[type=radio]:checked#freq-choice-7 ~ .dial::after {
+	transform: rotateZ(210deg);
+	}
+	input[type=radio]:checked#freq-choice-8 ~ .dial {
+	transform: rotateZ(240deg);
+	}
+	input[type=radio]:checked#freq-choice-8 ~ .dial::before {
+	transform: rotateZ(240deg);
+	}
+	input[type=radio]:checked#freq-choice-8 ~ .dial::after {
+	transform: rotateZ(240deg);
+	}
+	input[type=radio]:checked#freq-choice-9 ~ .dial {
+	transform: rotateZ(270deg);
+	}
+	input[type=radio]:checked#freq-choice-9 ~ .dial::before {
+	transform: rotateZ(270deg);
+	}
+	input[type=radio]:checked#freq-choice-9 ~ .dial::after {
+	transform: rotateZ(270deg);
+	}
+	input[type=radio]:checked#freq-choice-10 ~ .dial {
+	transform: rotateZ(300deg);
+	}
+	input[type=radio]:checked#freq-choice-10 ~ .dial::before {
+	transform: rotateZ(300deg);
+	}
+	input[type=radio]:checked#freq-choice-10 ~ .dial::after {
+	transform: rotateZ(300deg);
+	}
+	
+	.dial{
+	position: relative;
+	top: -8px;
+	left: -1px;
+	line-height: 0;
+	font-size: 65%;
+	color: #082;
+	text-shadow: 0px 0px 7px #2f5;
+	display: block;
+	width: 6.2rem;
+	height: 6.2rem;
+	padding: 1rem;
+	background: radial-gradient(#272727 30%, #333 50%, #222 65%, #111 90%, black 98%);
+	margin: 3rem auto;
+	border-radius: 50%;
+	transition: transform 0.3s ease-in-out;
+	}
+	.dial::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 6.2rem;
+	height: 6.2rem;
+	border-radius: 50%;
+
+
+	transition: transform 0.3s ease-in-out;
+	}
+	.dial::after {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 6.2rem;
+	height: 6.2rem;
+	border-radius: 50%;
+	top: 0;
+	left: 0;
+	
+	transition: transform 0.3s ease-in-out;
+	}
+	
+	.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+	
+	.clearfix {
+	display: inline-block;
+	}
+	
+	/* start commented backslash hack \*/
+	* html .clearfix {
+	height: 1%;
+	}
+	
+	.clearfix {
+	display: block;
+	}
+	
+/* close commented backslash hack */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.last-block{
+	position: absolute;
+width: 1940px;
+height: 80px;
+left: 3px;
+top: 2902px;
+
+background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
+}
