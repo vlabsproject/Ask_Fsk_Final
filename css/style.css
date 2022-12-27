@@ -2,10 +2,7 @@
 body{
     width: 900px;
     height: 100vh;
-    overflow:auto ;
 }
-
-
 
 .Vlabs{
   position: absolute;  
@@ -13,124 +10,61 @@ body{
   height: 28px;  
   left: 75px;  
   top: 33px;  
-  
   font-family: 'Poppins';  
   font-style: bold;  
   font-weight: 700;  
   font-size: 24px;  
   line-height: 28px;  
-  
-  color: #000000;  
-     
-	   
+  color: #000000;     
 }
 
-.User{
-	/* Udbhav v Kamath */
-
-	position: absolute;
-	width: 222px;
-	height: 34px;
-	left: 1187px;
-	top: 33px;  
-	
-	font-family: 'Poppins';
-	font-style: Bold;
-	font-weight: 400;
-	font-size: 20px;
-	line-height: 30px;
-	
-	color: #000000;
-}
 .Signupbutton{
-	/* Property 1=normal */
-
-
 box-sizing: border-box;
-
-/* Auto layout */
 font-family: 'Poppins';
-	font-style: Bold;
-  text-align: center;
+font-style: Bold;
+text-align: center;
 padding: 4px 14px;
 gap: 10px;
-
 position: absolute;
 width: 100px;
 height: 32px;
-left: 1394px;
+left: 1200px;
 top: 33px;  
-
 background: #FFFFFF;
 border: 1px solid #000000;
 box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25);
 border-radius: 6px;
 }
-
-.bluebar{
-	text-align: center;
-	color: #FFFAFA;
-	padding-top: 20px;
-	font-size: 25px;
-	font-family: 'Poppins';
-	font-style: Bold;
-	font-weight: 400;
-	
-}
-.bluebar{
-	position: absolute;
-width: 1580px;
-height: 79px;
-left: 0px;
-top: 85px;
-
-background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
-}
 .line1{
   position: absolute;
-  width: 1880px;
+  width: 1350px;
   height: 0px;
   left: -7px;
   top: 84px;
-  
   border: 1px solid #000000;
   transform: rotate(0.06deg);
   }
-
-
-  .HEADING1{
-         
-
-    /* ASK Modulation and Demodulation */
-
-          
+/* ASK Modulation and Demodulation */
+  .heading{         
 position: absolute;
 height: 26px;
-left: 485px;
-top: 196px;
+left: 400px;
+top: 150px;
 
 font-family: 'Poppins';
 font-style: bold;
 font-weight: 400;
 font-size: 34px;
-/* identical to box height */
-
-
 color: #000000;
-
 }
+
 .next{
-	align-items:center;
-	font-family: 'Poppins';
+align-items:center;
+font-family: 'Poppins';
 font-style: bold;
-font-size: 20px;
+font-size: 18px;
 color: #FFFAFA;
-}
-.next{
-	
 box-sizing: border-box;
-
-/* Auto layout */
 
 display: flex;
 flex-direction: row;
@@ -139,13 +73,13 @@ padding: 4px 14px;
 gap: 10px;
 
 position: absolute;
-width: 100px;
-height: 50px;
-left: 1393px;
-top: 202px;
+width: 80px;
+height: 40px;
+left: 1200px;
+top: 130px;
 
 background: #256AC0;
-border: 1px solid #FFFFFF;
+border: 1px solid black;
 box-shadow: 0px 0.5px 1.5px rgba(9, 63, 163, 0.25);
 border-radius: 6px;
 
@@ -153,17 +87,11 @@ border-radius: 6px;
 
 .back{
 	font-family: 'Poppins';
-font-style: bold;
-color: #FFFAFA;
-font-size: 20px;
-
-}
-.back{
+	font-style: bold;
+	color: #FFFAFA;
+	font-size: 18px;
 
 	box-sizing: border-box;
-
-	/* Auto layout */
-	
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
@@ -171,19 +99,40 @@ font-size: 20px;
 	gap: 10px;
 	
 	position: absolute;
-	width: 100px;
-height: 50px;
+	width: 80px;
+	height: 40px;
 	left: 65px;
-	top: 202px;
+	top: 130px;
 	
 	background: #2469BF;
-	border: 1px solid #FFFDFD;
+	border: 1px solid black;
 	box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25);
 	border-radius: 6px;
 }
+
+.bluebar{
+	text-align: center;
+	color: #FFFAFA;
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: 'Poppins';
+	font-style: Bold;
+	font-weight: 400;
+	position: absolute;
+	width: 1350px;
+	height: 79px;
+	left: 0px;
+	top: 250px;
+
+	background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
+}
+
+.wrapper{
+	width: 1400px;
+}
 .midContainer1{
 	position: absolute;
-width: 648px;
+width: 630px;
 height: 236px;
 left: 41px;
 top: 380px;
@@ -201,9 +150,9 @@ color: #000000;
 
 .midContainer2{
 	position: absolute;
-width: 648px;
+width: 630px;
 height: 236px;
-left: 795px;
+left: 700px;
 top: 380px;
 
 font-family: 'Inter';
@@ -215,18 +164,6 @@ line-height: 29px;
 color: #000000;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .simulationbar{
 	text-align: center;
 	color: #FFFAFA;
@@ -234,7 +171,7 @@ color: #000000;
 }
 .simulationbar{
 	position: absolute;
-width: 1500px;
+width: 1350px;
 height: 70px; 
 left: 0px;
 top: 720px;
@@ -244,14 +181,14 @@ background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%,
 }
 
  .switchRed{
-     width: 60px;
-     height: 60px;
-     background-color: red;
-     position: absolute;
-	 margin-top: 1100px;
-     margin-left: 325px;
-     box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.4); 
-     border: double;
+   width: 60px;
+   height: 60px;
+   background-color: red;
+   position: absolute;
+	 margin-top: 1090px;
+   margin-left: 300px;
+   box-shadow: 0 10px 15px 0 rgba(255, 255, 255, 0.4); 
+   border: double;
  }  
 
  .led{
@@ -259,15 +196,11 @@ background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%,
 	margin:auto;
 	text-align: center;
  }
- .switchRed p{
-	margin-top: 3540px;
-    font-size: 18px;
- }
  .led img{
 	position: relative;
 	height: 40px;
-	margin-top: 1090px;
-	left: -18px;
+	margin-top: 1080px;
+	left: -45px;
  }
 
 
@@ -280,13 +213,11 @@ background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%,
 	position: absolute;
 	margin-top: 1000px;
 	margin-left:165px;
-	height: 890px;
-	width: 90px;
 } 
 
 .setup1 img{
-	height: 400px;
-	
+	height: 355px;
+
 }
 
 
@@ -306,8 +237,8 @@ background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%,
 .image{
 	position: relative;
 	height: 50px;
-	top: -120px;
-	left: 550px;
+	top: -115px;
+	left: 470px;
 }
 
 /*Run*/
@@ -315,8 +246,8 @@ background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%,
 	 width: 60px;
      height: 60px;
      position: relative;
-     margin-left: -135px;
-     margin-top: 1210px;
+     margin-left: -150px;
+     margin-top: 1190px;
 	background-color: rgb(208, 205, 205);
 	border:4px double #010101;
 
@@ -341,13 +272,13 @@ background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%,
 	position: relative;
 	padding:0.9px ;
 	height: 76px;
-	top: 1030px;
-	left:320px;
+	top: 1000px;
+	left:250px;
 }
 
 
-.Instructions{
-	/* Rectangle 96 */
+/*.Instructions{
+	 Rectangle 96 
 
 
 position: absolute;
@@ -358,7 +289,7 @@ top: 996px;
 
 background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
 border-radius: 14.0304px;
-}
+}*/
 
 
 
@@ -429,8 +360,8 @@ border-radius: 14.0304px;
 	top: 300px;
 	margin-left: 10px;
 	margin-right: 10px;
-}
-*/
+}*/
+
 #canvasCarrier{
 
 
@@ -487,6 +418,7 @@ width: 590px;
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -506,15 +438,17 @@ width: 590px;
 	
 	.container{
 	  position: relative;
+	  width: 20%;
 	  display: flexbox;
-	  top: 20.7rem;
-    right:11rem;
+	  top: 36rem;
+    	left:5rem;
 	}
 	.containera{
 	  position: relative;
+	  width: 10%;
 	  display:flexbox;
-	  top: 6.8rem;
-    right: 29rem;
+	  top: 32rem;
+    left:5.5rem;
 	}
 	form {
 	max-width: 30rem;
@@ -536,7 +470,7 @@ width: 590px;
 	position: absolute;
 	display: block;
 	margin: 0 auto;
-	padding-top: 1rem;
+	padding-top: 2.5rem;
 	width: 1rem;
 	left: 4.3rem;
 	transform-origin: 50% 100px;
@@ -814,15 +748,15 @@ width: 590px;
 	
 	.dial{
 	position: relative;
-	top: -8px;
+	top: 14px;
 	left: -1px;
 	line-height: 0;
 	font-size: 65%;
 	color: #082;
 	text-shadow: 0px 0px 7px #2f5;
 	display: block;
-	width: 6.2rem;
-	height: 6.2rem;
+	width: 4.2rem;
+	height: 4.2rem;
 	padding: 1rem;
 	background: radial-gradient(#272727 30%, #333 50%, #222 65%, #111 90%, black 98%);
 	margin: 3rem auto;
@@ -865,8 +799,8 @@ width: 590px;
 	.clearfix {
 	display: inline-block;
 	}
-	
-	/* start commented backslash hack \*/
+	 
+	/* start commented backslash hack */
 	* html .clearfix {
 	height: 1%;
 	}
@@ -875,62 +809,13 @@ width: 590px;
 	display: block;
 	}
 	
-/* close commented backslash hack */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .last-block{
-	position: absolute;
-width: 1940px;
-height: 80px;
+position: absolute;
+width: 1350px;
+height: 50px;
 left: 3px;
-top: 2902px;
+top: 2400px;
 
 background: linear-gradient(180deg, #2266BB 0%, rgba(50, 131, 234, 0.92) 48.96%, #2266BB 100%);
 }

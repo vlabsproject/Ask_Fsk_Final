@@ -18,6 +18,8 @@ function onOff(){
 }
 
 
+
+
 // ------------------------------------------------------UserInput--------------------------------------------------------------------
 let bitStream = [0,0,0,0,0,0,0,0];
 
@@ -258,8 +260,9 @@ function swapOneZero7(){
 function inputStream(){
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
-c.clearRect(0, 0, canvas.width, canvas.height);                     //Clears the canvas for new graph
-
+c.clearRect(0, 0, canvas.width, canvas.height);      //Clears the canvas for new graph
+c.fillStyle = "#000000";
+c.fillRect(0, 0, canvas.width, canvas.height);
 // canvas.width = innerWidth;
 // canvas.height = innerHeight;
 var h = canvas.height;
@@ -283,20 +286,25 @@ for( let i=0; i<8; i++)
         c.lineTo(((i+1)*canvas.width)/8,(canvas.height/2)-(canvas.height/4));
     }
 }
-c.strokeStyle = "green";
+c.strokeStyle = "yellow";
 c.stroke();
 }
+
 // ----------------------------------------------------------Sine Wave ----------------------------------------------------------
 function sineWave(){
 const carrier = document.getElementById('canvasFSK');
 const d = carrier.getContext('2d');
 d.clearRect(0, 0, carrier.width, carrier.height);    
+d.fillStyle = "#000000";
+d.fillRect(0, 0, carrier.width, carrier.height);
 // carrier.width = innerWidth;
 // carrier.height = innerHeight;
 
 d.beginPath();
 
 d.moveTo(0,carrier.height/2);
+
+
 // Amp check
 if(document.getElementById('radio-choice-0').checked==true){
   var amp=0;
@@ -332,7 +340,7 @@ else if(document.getElementById('radio-choice-10').checked==true){
   var amp=10;
 }
 else{
-  var amp = 70;
+  var amp = 10;
 }
 
 // frequency check
@@ -371,19 +379,25 @@ else if(document.getElementById('freq-choice-10').checked==true){
   var freq=10;
 }
 else{
-  var freq = 70;
+  var freq = 10;
 }
+
+
 for (let i = 0; i < carrier.width; i++) {
   d.lineTo(i, carrier.height/2 + Math.sin(i * freq*10) * amp*10);  
 }
 d.lineTo(carrier.width, carrier.height/2);
+d.strokeStyle = "yellow";
 d.stroke();
+
 }
 // -------------------------------------------------------ASK OUTPUT---------------------------------------------------------------
 function askOutput(){
     const output = document.getElementById('canvasASK');
     const e = output.getContext('2d');
     e.clearRect(0, 0, output.width, output.height); 
+    e.fillStyle = "#000000";
+    e.fillRect(0, 0, output.width, output.height);
     e.beginPath();
     e.moveTo(0,output.height/2);
     // Amp check
@@ -421,7 +435,7 @@ else if(document.getElementById('radio-choice-10').checked==true){
   var amp=10;
 }
 else{
-  var amp = 70;
+  var amp = 10;
 }
 
 // frequency check
@@ -460,7 +474,7 @@ else if(document.getElementById('freq-choice-10').checked==true){
   var freq=10;
 }
 else{
-  var freq = 70;
+  var freq = 10;
 }
     for( let j=0; j<8; j++){
     if(bitStream[j]==0)
@@ -480,6 +494,7 @@ else{
       // e.lineTo(output.width, output.height/2);
     }
     }
+    e.strokeStyle = "yellow";
     e.stroke();
   }
   // -------------------------------------------------FSK SIGNAL---------------------------------------------------------------------
@@ -487,6 +502,8 @@ function ffskOutput(){
     const fskSignal = document.getElementById('commentcanvasFSK');
     const f = fskSignal.getContext('2d');
     f.clearRect(0, 0, fskSignal.width, fskSignal.height); 
+    f.fillStyle = "#000000";
+    f.fillRect(0, 0, fskSignal.width, fskSignal.height);
     f.beginPath();
     f.moveTo(0,fskSignal.height/2);
     // Amp check
@@ -524,7 +541,7 @@ else if(document.getElementById('radio-choice-10').checked==true){
   var amp=10;
 }
 else{
-  var amp = 70;
+  var amp = 10;
 }
 
 // frequency check
@@ -563,7 +580,7 @@ else if(document.getElementById('freq-choice-10').checked==true){
   var freq=10;
 }
 else{
-  var freq = 70;
+  var freq = 10;
 }
     for( let j=0; j<8; j++){
     if(bitStream[j]==0)
@@ -583,6 +600,7 @@ else{
       // e.lineTo(output.width, output.height/2);
     }
     }
+    f.strokeStyle = "yellow";
     f.stroke();
 }
 // --------------------------------------------------DEMODULATED SIGNAL---------------------------------------------------------------
@@ -590,7 +608,8 @@ function demodulated(){
   const demodu = document.getElementById('canvasDemodulated');
   const g = demodu.getContext('2d');
   g.clearRect(0, 0, demodu.width, demodu.height);                     //Clears the canvas for new graph
-
+  g.fillStyle = "#000000";
+  g.fillRect(0, 0, demodu.width, demodu.height);
   // canvas.width = innerWidth;
   // canvas.height = innerHeight;
   // var h = canvas.height;
@@ -613,6 +632,7 @@ function demodulated(){
           g.lineTo(((i+1)*demodu.width)/8,(demodu.height/2)-(demodu.height/4));
       }
   }
+  g.strokeStyle = "yellow";
   g.stroke();  
 }
 //OnClick Button
